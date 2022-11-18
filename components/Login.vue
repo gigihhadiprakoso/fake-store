@@ -99,7 +99,7 @@ export default {
             .catch(error => {
                 this.isLoading = false;
                 if(error.response.status){
-                    this.errorMsg = error.response.status
+                    this.errorMsg = error.response.data
                 }
             })
         }
