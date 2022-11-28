@@ -1,12 +1,5 @@
 <template>
-    <div class="grid grid-cols-9">
-        <div class="col-start-3 col-span-7 gap-2">
-            <!-- <div v-for="product in products" :key="product.id">
-                <Card :img="product.image" :title="product.title" :price="product.price" />
-            </div> -->
-            <Table :columns="fields" :rows="products" :action="action"/>
-        </div>
-    </div>
+    <Table :columns="fields" :rows="products" :action="action" :is-iterate-number="true" :is-pagination="true" />
 </template>
 
 <script>
@@ -21,14 +14,20 @@ export default {
     layout: 'custom',
     data(){
         return {
-            fields: ['id', 'title', 'price', 'category'],
+            fields: ['title', 'price', 'category'],
             products:[],
             action:['detail','edit','delete']
         }
     },
 
     mounted(){
-        this.$axios.get('/products')
+        var url = '/products'
+        var per_page = 10;
+
+        if(per_page)
+            url += '?limit='+per_page;
+
+        this.$axios.get(url)
             .then(res => {
                 this.products = res.data
             })
@@ -38,9 +37,3 @@ export default {
     }
 }
 </script>
-
-<style>
-body{
-    background-color: #E3E3E3;
-}
-</style>

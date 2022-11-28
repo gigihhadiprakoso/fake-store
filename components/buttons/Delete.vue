@@ -4,9 +4,10 @@
             text-white 
             bg-red-400 
             hover:bg-red-500
-            focus:ring-4 
+            focus:ring-0 
             focus:outline-none 
             focus:ring-red-500
+            active:bg-red-600
             rounded-sm 
             text-sm 
             p-1 

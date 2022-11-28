@@ -7,6 +7,9 @@
             <h1 class="">Log In</h1>
             <form>
                 <div class="mb-4">
+
+                </div>
+                <div class="mb-4">
                     <label class="block font-bold" for="username">Username</label>
                     <input type="text" v-model="username" class="block px-3 py-2 w-full border rounded-md shadow-sm">
                 </div>
@@ -89,6 +92,9 @@ export default {
                 password: this.password
             };
             
+            // const result = await this.$auth.loginWith('local',data);
+            // console.log(result)
+
             axios.post("https://fakestoreapi.com/auth/login", data)
             .then(response => {
                 this.isLoading = false;

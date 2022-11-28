@@ -1,7 +1,11 @@
 <template>
     <div id="app">
         <Navbar />
-        <Nuxt />
+        <div class="grid grid-cols-12 gap-x-36">
+            <div class="col-start-3 col-span-9">
+                <Nuxt />
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -14,3 +18,8 @@ export default {
     }
 }
 </script>
+<style>
+body{
+    background-color: #E3E3E3;
+}
+</style>

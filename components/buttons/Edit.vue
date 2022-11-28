@@ -4,9 +4,10 @@
             text-white
             bg-yellow-400 
             hover:bg-yellow-500 
-            focus:ring-4 
+            focus:ring-0 
             focus:outline-none 
             focus:ring-yellow-500 
+            active:bg-yellow-600
             rounded-sm
             text-sm 
             p-1 
