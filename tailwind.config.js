@@ -2,6 +2,10 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    backgroundColor: theme => ({
+      ...theme('colors'),
+      'primary-fakestore': '#802c6e',
+    }),
     extend: {},
   },
   variants: {
