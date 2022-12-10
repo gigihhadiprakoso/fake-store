@@ -14,7 +14,6 @@
 				<div class="flex md:order-2">
 					<button type="button" 
 						class="
-						items-center
 							text-gray-500 
 							font-medium 
 							rounded-lg 
