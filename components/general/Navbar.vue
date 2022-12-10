@@ -3,7 +3,7 @@
 		<!-- <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed inset-x-0 z-50 w-full top-0 left-0 border-b border-gray-200 dark:border-gray-600 shadow-lg"> -->
 		<nav class="fixed top-0 z-50 inset-x-0 h-16 justify-between bg-white dark:bg-gray-900 px-2 sm:px-4 py-2.5">
 			<div class="container flex flex-wrap justify-between items-center mx-auto">
-				<a href="https://flowbite.com/" class="flex items-center">
+				<a href="https://fakestoreapi.com/" class="flex items-center">
 					<img
 						src="https://fakestoreapi.com/icons/logo.png"
 						class="mr-3 h-6 sm:h-9"
